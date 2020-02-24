@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Main from './pages/Main';
 import User from './pages/User';
+import GithubWebView from './pages/GithubWebView';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,11 @@ function Routes() {
           name="User"
           component={User}
           options={User.NavigationOptions}
+        />
+        <Stack.Screen
+          name="GithubWebView"
+          component={GithubWebView}
+          options={GithubWebView.NavigationOptions}
         />
       </Stack.Navigator>
     </NavigationContainer>
